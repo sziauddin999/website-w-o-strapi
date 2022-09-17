@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>TandooriZaika</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+		<link rel="stylesheet" href="../css/style.css" />
+  	</head>
+  	<body>
+		<nav class="px-6 py-2 bg-[#1f2a44] shadow text-white fixed z-[10] w-full">
+			<div class="md:flex md:items-center md:justify-between max-w-7xl mx-auto">
+				<div class="flex justify-between items-center">
+					<a href="/">
+						<img src="../public/images/brand-image.png" class="h-16 m-2" alt="brand" srcset="" />
+					</a>
+					<span class="text-3xl cursor-pointer md:hidden mx-2 mt-2 block">
+						<ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon>
+					</span>
+				</div>
+				<ul class="font-kanit md:flex md:items-center z-[9] md:z-auto md:static absolute bg-[#1f2a44] w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-200">
+					<li class=" mx-3 mb-3 md:my-4 cursor-pointer hover:text-[#bd9b16] hover:scale-110 transition delay-75 duration-100 ease-in-out">
+						<a href="/">
+							Home
+						</a>
+					</li>
+					<li class=" mx-3 mb-3 md:my-4 cursor-pointer hover:text-[#bd9b16] hover:scale-110 transition delay-75 duration-100 ease-in-out">
+						<a href="/">
+							Menu
+						</a>
+					</li>
+					<li class="mx-3 mb-3 md:my-4 cursor-pointer hover:text-[#bd9b16] hover:scale-110 transition delay-75 duration-100 ease-in-out"> 
+						<a href="#reservations">
+							Reservations
+						</a>
+					</li>
+					<li class="mx-3 mb-3 md:my-4 cursor-pointer hover:text-[#bd9b16] hover:scale-110 transition delay-75 duration-100 ease-in-out">
+						<a href="#aboutus">
+							About Us
+						</a>
+					</li>
+					<li class="mx-3 mb-3 md:my-4 cursor-pointer hover:text-[#bd9b16] hover:scale-110 transition delay-75 duration-100 ease-in-out">
+						<a href="#contactus">
+							Contact Us
+						</a>
+					</li>
+					<button class="bg-[#bd9b16] hover:bg-[#dfbd38] active:bg-[#dfbd38] focus:outline-none focus:ring focus:ring-[#dfbd38] mt-3 mb-3 px-8 py-2 ml-2 mr-2 rounded">
+						Order
+					</button>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="bg-[url('../public/images/hero-img.jpg')] h-[650px] bg-cover">
+			<div class=" bg-[#00000073] absolute top-0 left-0 right-0 bottom-0 h-[650px] overflow-hidden bg-fixed">
+				<main class="mx-auto pt-48 max-w-7xl px-4 sm:pt-40 sm:px-6 md:pt-44 lg:pt-52 lg:px-8 xl:pt-56 " >
+					<div class="text-center">
+						<h1 class="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl" >
+							<span class="block xl:inline">Welcome to</span>
+							<span class="font-serif block text-[#dfbd38] xl:inline">Tandoori Zaika</span>
+						</h1>
+						<p class="mt-3 text-base text-white sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-auto" >
+							Hundreds of flavors under one roof.
+							<br>
+							Specialist in: All types of authentic Indian food.
+						</p>
+						<div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-center">
+							<div class="rounded-md shadow">
+								<a href="#" class="flex w-full items-center justify-center rounded-md border border-transparent bg-[#bd9b16] px-8 py-3 text-base font-medium text-white hover:bg-[#dfbd38] hover:scale-105 duration-300 md:py-4 md:px-10 md:text-lg" >Order Now</a >
+							</div>
+						</div>
+					</div>
+				</main>
+			</div>
+		</div>
+
+  
+
+		<div class="bg-white py-12">
+			<div class="mx-auto max-w-7xl pb-12 px-4 sm:px-6 lg:px-8 border-b-2 border-[#dfbd38]">
+				<div class="lg:text-center">
+					<p class="mt-2 text-3xl font-kanit font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">Services we offer</p>
+					<p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">We provide best in class services. Host an event, book reservations dine in and enjoy.</p>
+				</div>
+		
+				<div class="mt-10">
+					<dl class="space-y-10 md:grid md:grid-cols-3 md:gap-x-8 md:gap-y-10 md:space-y-0">
+						<div class="relative">
+							<dt>
+							<div class="absolute flex h-12 w-12 items-center justify-center rounded-full bg-[#dfbd38] text-white">
+								<ion-icon name="leaf-outline" class="text-3xl"></ion-icon>
+							</div>
+							<p class="font-kanit ml-16 text-lg font-medium leading-6 text-gray-900">Authentic Indian Food</p>
+							</dt>
+							<dd class="mt-2 ml-16 text-base text-gray-500">Enjoy the real authentic Indian food at tandoori zaika all at reasonable price, so brings your friends and family and have some good food.</dd>
+						</div>
+			
+						<div class="relative">
+							<dt>
+							<div class="absolute flex h-12 w-12 items-center justify-center rounded-full bg-[#dfbd38] text-white">
+								<ion-icon name="cash-outline" class="text-3xl"></ion-icon>
+							</div>
+							<p class="font-kanit ml-16 text-lg font-medium leading-6 text-gray-900">Reasonable Price</p>
+							</dt>
+							<dd class="mt-2 ml-16 text-base text-gray-500">For us quality is utmost important and we don't comnpromise on that, and maintaning high quality with reasonable price is our biggest flex.</dd>
+						</div>
+			
+						<div class="relative">
+							<dt>
+							<div class="absolute flex h-12 w-12 items-center justify-center rounded-full bg-[#dfbd38] text-white">
+								<ion-icon name="ribbon-outline" class="text-3xl"></ion-icon>
+							</div>
+							<p class="font-kanit ml-16 text-lg font-medium leading-6 text-gray-900">Good Hospitality</p>
+							</dt>
+							<dd class="mt-2 ml-16 text-base text-gray-500">Have a date? no problem book your reservation and enjoy, having a birthday celebration? no problem book your event with us without any hesitation.</dd>
+						</div>
+					</dl>
+				</div>
+			</div>
+		</div>	
+		
+		<div class="py-12" id="reservations">
+			<div class="mx-auto max-w-6xl px-4 mt-4">
+				<div class="lg:text-center mb-6">
+					<p class="mt-2 text-3xl font-kanit font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">Reservations</p>
+				</div>
+				<div class="card_1 mt-8 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10 md:space-y-0">
+					<div class="py-4 flex justify-center">
+						<span >
+							<img src="../public/images/reserve-bg.jpeg" alt="reserved" srcset="" class="border-solid border-2 border-[#dfbd38] md:h-52 xl:h-80 rounded drop-shadow-xl">
+						</span>
+					</div>
+					<div class="max-w-md py-4">
+						<h3 class="reserve_now font-bold text-2xl ">
+							Reserve Tables Now
+						</h3>
+						<p class="py-8 font-kanit font-light">
+							Get your seats reserved now! book at your home comfort enjoy the ambience here. Now you can book how much time you needed.
+						</p>
+						<button class="bg-[#bd9b16] hover:bg-[#dfbd38] active:bg-[#dfbd38] focus:outline-none focus:ring focus:ring-[#dfbd38] hover:shadow-lg flex items-center mb-3 px-8 py-2  mr-2 rounded text-white">
+							Book Now <ion-icon name="chevron-forward-outline" class="pl-1"></ion-icon>
+						</button>
+					</div>
+				</div>
+				<div class="card_2 flex flex-col-reverse md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10 md:space-y-0 mt-8">
+					<div class="max-w-md py-4 md:ml-6">
+						<h3 class="reserve_now font-bold text-2xl ">
+							Register your Event!
+						</h3>
+						<p class="py-8 font-kanit font-light">
+							Get your event celebrated with Tandoori Zaika, book your event now without any hassle. Enjoy good and healthy food, party hard!
+						</p>
+						<button class="bg-[#bd9b16] hover:bg-[#dfbd38] active:bg-[#dfbd38] focus:outline-none focus:ring focus:ring-[#dfbd38] hover:shadow-lg flex items-center mb-3 px-8 py-2  mr-2 rounded text-white">
+							Set up the party<ion-icon name="chevron-forward-outline" class="pl-1 mt-1"></ion-icon>
+						</button>
+					</div>
+					<div class="py-4 flex justify-center">
+						<span >
+							<img src="../public/images/event-reserve.jpg" alt="reserved" srcset="" class="border-solid border-2 border-[#dfbd38] md:h-52 xl:h-80 rounded drop-shadow-xl">
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="py-12" id="aboutus">
+			<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+				<div class="lg:text-center">
+					<p class="mt-2 text-3xl font-kanit font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">About us</p>
+				</div>
+				<div class="py-12 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10 md:space-y-0 place-items-center ">
+					<div class="bg-[#1f2a44] flex justify-center rounded h-max">
+						<img src="../public/images/brand-image.png" class="h-64 m-2 p-6" alt="brand" srcset="" />
+					</div>
+					<div class="md:text-base lg:text-2xl mt-4">
+						It is our passion to provide authentic Indian taste by following the deep-rooted traditions of preparing food & putting the extra mile to deliver the right mix of flavours. In addition, we strive to offer an atmosphere where our guests can totally relax and enjoy our hospitality to the fullest. Tandoori Zaika aims to provide Indian food of a high quality at a reasonable price under one roof. Our team's commitment to meeting our customers' expectations makes this venture honest.
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="py-12 bg-gradient-to-r from-[#1f2a44]  to-blue-800  ">
+			<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+				<div class="lg:text-center">
+					<p class="mt-2 text-3xl font-kanit font-bold leading-8 tracking-tight text-white sm:text-4xl">Testimonials</p>
+				</div>
+				<div class="py-12 md:grid md:grid-cols-3 md:gap-x-8 md:gap-y-10 md:space-y-0 place-items-center ">
+					<div class="testimonial_1 border border-gray-200 duration-300 hover:shadow-xl m-4 p-6 text-white rounded">
+						<div class="h-max flex justify-center">
+							<img src="../public/images/pexels-kelvin-valerio-810775.jpg" class="h-36 w-36 rounded-full " alt="brand" srcset="" />
+						</div>
+						<div class="name flex items-center justify-center">
+							<div class="text-center mt-4 ml-8 text-lg font-bold">
+								Diablo Jr.
+							</div>
+							<div class="time text-center text-xs text-gray-400 mt-5 ml-2">
+								1 week ago
+							</div>
+						</div>
+						<div class="rating flex justify-center ">
+							<span class="" data-index="0" data-forhalf="★" style="position: relative; overflow: hidden; cursor: default; display: block; float: left; color: rgb(255, 215, 0); font-size: 20px;">★</span>
+							<span class="" data-index="0" data-forhalf="★" style="position: relative; overflow: hidden; cursor: default; display: block; float: left; color: rgb(255, 215, 0); font-size: 20px;">★</span>
+							<span class="" data-index="0" data-forhalf="★" style="position: relative; overflow: hidden; cursor: default; display: block; float: left; color: rgb(255, 215, 0); font-size: 20px;">★</span>
+							<span class="" data-index="0" data-forhalf="★" style="position: relative; overflow: hidden; cursor: default; display: block; float: left; color: rgb(255, 215, 0); font-size: 20px;">★</span>
+							<span class="" data-index="0" data-forhalf="★" style="position: relative; overflow: hidden; cursor: default; display: block; float: left; color: rgb(255, 215, 0); font-size: 20px;">★</span>
+						</div>
+						<div class="test_description mt-2">
+							It is hard to find Indian Restaurants that provide food that actually reach our expectations. But when it comes to Gold Indian restaurant without a doubt, they do it with the best ingredients. I love it:))) they are very welcoming.
+						</div>
+					</div>
+					<div class="testimonial_2 border border-gray-200 duration-300 hover:shadow-xl m-4 p-6 text-white rounded">
+						<div class="h-max flex justify-center">
+							<img src="../public/images/pexels-stefan-stefancik-91227.jpg" class="h-36 w-36 rounded-full " alt="brand" srcset="" />
+						</div>
+						<div class="name flex items-center justify-center">
+							<div class="text-center mt-4 ml-8 text-lg font-bold">
+								Carlos P.
+							</div>
+							<div class="time text-center text-xs text-gray-400 mt-5 ml-2">
+								2 weeks ago
+							</div>
+						</div>
+						<div class="rating flex justify-center ">
+							<span class="" data-index="0" data-forhalf="★" style="position: relative; overflow: hidden; cursor: default; display: block; float: left; color: rgb(255, 215, 0); font-size: 20px;">★</span>
+							<span class="" data-index="0" data-forhalf="★" style="position: relative; overflow: hidden; cursor: default; display: block; float: left; color: rgb(255, 215, 0); font-size: 20px;">★</span>
+							<span class="" data-index="0" data-forhalf="★" style="position: relative; overflow: hidden; cursor: default; display: block; float: left; color: rgb(255, 215, 0); font-size: 20px;">★</span>
+							<span class="" data-index="0" data-forhalf="★" style="position: relative; overflow: hidden; cursor: default; display: block; float: left; color: rgb(255, 215, 0); font-size: 20px;">★</span>
+							<span class="" data-index="0" data-forhalf="★" style="position: relative; overflow: hidden; cursor: default; display: block; float: left; color: rgb(255, 215, 0); font-size: 20px;">★</span>
+						</div>
+						<div class="test_description mt-2">
+							Gold has new owners and they have taken the food and hospitality to the next level! Not only are they great at typical North Indian dishes( just sampled home made Samosas and fried fish), they are very welcoming!
+						</div>
+					</div>
+					<div class="testimonial_3 border border-gray-200 duration-300 hover:shadow-xl m-4 p-6 text-white rounded">
+						<div class="h-max flex justify-center">
+							<img src="../public/images/media_1bcd514348a568faed99e65f5249895e38b06c947.jpeg" class="h-36 w-36 rounded-full " alt="brand" srcset="" />
+						</div>
+						<div class="name flex items-center justify-center">
+							<div class="text-center mt-4 ml-8 text-lg font-bold">
+								David Juan
+							</div>
+							<div class="time text-center text-xs text-gray-400 mt-5 ml-2">
+								1 month ago
+							</div>
+						</div>
+						<div class="rating flex justify-center ">
+							<span class="" data-index="0" data-forhalf="★" style="position: relative; overflow: hidden; cursor: default; display: block; float: left; color: rgb(255, 215, 0); font-size: 20px;">★</span>
+							<span class="" data-index="0" data-forhalf="★" style="position: relative; overflow: hidden; cursor: default; display: block; float: left; color: rgb(255, 215, 0); font-size: 20px;">★</span>
+							<span class="" data-index="0" data-forhalf="★" style="position: relative; overflow: hidden; cursor: default; display: block; float: left; color: rgb(255, 215, 0); font-size: 20px;">★</span>
+							<span class="" data-index="0" data-forhalf="★" style="position: relative; overflow: hidden; cursor: default; display: block; float: left; color: rgb(255, 215, 0); font-size: 20px;">★</span>
+							<span class="" data-index="0" data-forhalf="★" style="position: relative; overflow: hidden; cursor: default; display: block; float: left; color: rgb(255, 215, 0); font-size: 20px;">★</span>
+						</div>
+						<div class="test_description mt-2">
+							We had our dinner, Aloo tiki chat, Paneer butter masala n naans. All food was delicious n served well. The staff were friendly n cooked food as per our spice level. New management too, hope they will bring more choices of curries n snacks.
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+
+		<div class="py-12" id="contactus">
+			<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+				<div class="lg:text-center">
+					<p class="mt-2 text-3xl font-kanit font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">Contact us</p>
+				</div>
+				<div class="relative">
+					<div class="c_bg w-24 h-24 rounded-full bg-[#1f2a44] absolute left-[5%] opacity-20 -z-10 ">
+					</div>
+					<div class="c_bg w-36 h-36 rounded-full bg-[#dfbd38] absolute right-[55%] top-96 opacity-80 -z-10 ">
+					</div>
+				</div>
+					
+				<div class="py-12 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10 md:space-y-0 place-items-center ">
+					<div class="contact_form mb-8 bg-[#1f2a44] border-[#dfbd38] border-4 rounded pl-10 pr-10 pt-8 pb-8">
+						<div class="">
+							<div>
+							  <span class="text-sm text-[#dfbd38] font-bold">Full Name</span>
+							  <input class="w-full bg-transparent text-white mt-2 p-2 rounded duration-300 border-2 border-gray-300 focus:bg-transparent hover:bg-transparent focus:outline-none focus:shadow-outline"
+								type="text" placeholder="">
+							</div>
+							<div class="mt-8">
+							  <span class="text-sm text-[#dfbd38] font-bold">Email</span>
+							  <input class="w-full bg-transparent text-white mt-2 p-2 rounded duration-300 border-2 border-gray-300 focus:bg-transparent hover:bg-transparent focus:outline-none focus:shadow-outline"
+								type="text">
+							</div>
+							<div class="mt-8">
+							  <span class="text-sm text-[#dfbd38] font-bold">Message</span>
+							  <textarea
+								class="w-full resize-none h-32 bg-transparent text-white mt-2 p-2 rounded duration-300 border-2 border-gray-300 focus:bg-transparent hover:bg-transparent focus:outline-none focus:shadow-outline"></textarea>
+							</div>
+							<div class="mt-8">
+							  <button
+								class="p-3 w-full text-white rounded bg-[#bd9b16] hover:bg-[#dfbd38] active:bg-[#dfbd38] focus:outline-none focus:ring focus:ring-[#dfbd38]">
+								Submit
+							  </button>
+							</div>
+						</div>
+					</div>
+					<div>
+						<img src="../public/images/map.d583c6ae.png" alt="reserved" srcset="" class="border-solid border-2 border-[#dfbd38] md:h-72 xl:h-96 rounded drop-shadow-xl">
+					</div>
+				</div>
+				
+
+			</div>
+		</div>
+
+		<div class="pt-8">
+			<div class="footer  bg-[#1f2a44] p-6 md:p-12">
+				<div class="brand max-w-5xl mx-auto md:flex items-center mb-8 ">
+					<div>
+						<img src="../public/images/brand-footer.png" class="h-28 w-28 border-solid border-4 border-[#dfbd38] rounded-full" alt="brand" srcset="" />
+					</div>
+					<div>
+						<div class="font-serif md:ml-4 ml-0 mb-2 mt-4 md:mt-0 block text-lg text-white">
+							Taste the authentic Indian food by Tandoori Zaika.
+						</div>
+						<a href="#" class="link font-kanit md:ml-4 ml-0 block text-white">
+							Tandoori Zaika Restaurant
+							1214 Glenhuntly Road, Glenhuntly
+						</a>
+					</div>
+				</div>
+				<div class="links_container max-w-5xl mx-auto flex md:flex-nowrap flex-wrap justify-between text-white mt-6 md:mt-0">
+					<div class="link_column p-2 w-6/12 mb-4">
+						<div class="link_heading mb-4">
+							Company
+						</div>
+						
+						<a href="#" class="link mt-2 block text-gray-300 hover:text-white">
+							About
+						</a>
+						<a href="#" class="link mt-2 block text-gray-300 hover:text-white">
+							Careers
+						</a>
+						<a href="#" class="link mt-2 block text-gray-300 hover:text-white">
+							Terms of service
+						</a>
+						<a href="#" class="link mt-2 block text-gray-300 hover:text-white">
+							Cookie policy
+						</a>
+						<a href="#" class="link mt-2 block text-gray-300 hover:text-white">
+							Privacy policy
+						</a>
+					</div>
+					<div class="link_column p-2 w-6/12 mb-4">
+						<div class="link_heading mb-4">
+							Help & Support
+						</div>
+						
+						<a href="#" class="link mt-2 block text-gray-300 hover:text-white">
+							Contact us
+						</a>
+						<a href="#" class="link mt-2 block text-gray-300 hover:text-white">
+							Support Center
+						</a>
+					</div>
+					<div class="link_column p-2 w-6/12 mb-4">
+						<div class="link_heading mb-4">
+							Book Now
+						</div>
+						
+						<a href="#" class="link mt-2 block text-gray-300 hover:text-white">
+							Table reservation
+						</a>
+						<a href="#" class="link mt-2 block text-gray-300 hover:text-white">
+							Event reservation
+						</a>
+						<a href="#" class="link mt-2 block text-gray-300 hover:text-white">
+							Services we offer
+						</a>
+					</div>
+					<div class="link_column p-2 w-6/12 mb-4">
+						<div class="link_heading mb-4">
+							Branches
+						</div>
+						
+						<a href="#" class="link mt-2 block text-gray-300 hover:text-white">
+							Austrailia
+						</a>
+						<a href="#" class="link mt-2 block text-gray-300 hover:text-white">
+							Germany
+						</a>
+						<a href="#" class="link mt-2 block text-gray-300 hover:text-white">
+							India
+						</a>
+					</div>
+					<div class="link_column p-2 w-6/12 mb-4">
+						<div class="link_heading mb-4">
+							Follow us
+						</div>
+						
+						<a href="#" class="link mt-2 block text-gray-300 hover:text-white">
+							Facebook
+						</a>
+						<a href="#" class="link mt-2 block text-gray-300 hover:text-white">
+							Instagram
+						</a>
+						<a href="#" class="link mt-2 block text-gray-300 hover:text-white">
+							Twitter
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cc_footer bg-[#dfbd38]">
+			<div class="cc_container pt-6 pb-6 px-4 md:px-2 max-w-5xl mx-auto md:flex justify-between text-center">
+				<div class="mailto">
+					<a href="#">
+						connectus@digiklug.com.au
+					</a>
+				</div>
+				<div class="web mt-3 md:mt-0">
+					<a href="#">
+						© 2022 Digiklug Solutions LLP
+					</a>
+				</div>
+			</div>
+		</div>
+    <script>
+      function Menu(e) {
+        let list = document.querySelector("ul");
+        e.name === "menu"
+          ? ((e.name = "close"),
+            list.classList.add("top-[80px]"),
+            list.classList.add("opacity-100"))
+          : ((e.name = "menu"),
+            list.classList.remove("top-[80px]"),
+            list.classList.remove("opacity-100"));
+      }
+    </script>
+  </body>
+</html>
+
